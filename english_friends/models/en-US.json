@@ -1,0 +1,59 @@
+{
+    "interactionModel":{
+        "languageModel":{
+            "invocationName":"english friends",
+            "types":[],
+            "intents":[
+                {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+                },
+                {
+                  "name": "SelectIntent",
+                  "samples": [
+                    "select",
+                    "select scene"
+                  ]
+                },
+                {
+                    "name": "YouWantToSay_YouOrderDrinksAtTheShopIntent",
+                    "samples":[
+                        "I want to something drinks",
+                        "Can I get some drinks",
+                        "Would you bring me some drinks"
+                    ]
+                },
+                {
+                    "name": "YouWantToSay_YouSayStomakAcheAtTheDruggStoreIntent",
+                    "samples": [
+                        "I have a stomach ache",
+                        "Could you give me some medicine for my stomach ache"
+                    ]
+                },
+                {
+                    "name": "YouWantToSay_YouWillGoToAmsterdamForYourTripWithMyFamillyIntent",
+                    "samples": [
+                        "We will go to amsterdam for familly trip",
+                        "I am going to trip to amsterdam with my familly"
+                    ]
+                },
+                {
+                    "name": "YouWantToSay_ItIsMoreInterestingBaseballThanFootball",
+                    "samples": [
+                        "I am more interested in baseball than soccer",
+                        "It is better baseball than soccer",
+                        "I prefer baseball to soccer"
+                    ]
+                }
+            ]
+        }
+    }
+}

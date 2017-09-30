@@ -1,0 +1,11 @@
+{
+  "name": "alexa-skill-english-friends",
+  "version": "1.0.0",
+  "description": "English conversation training skills",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.0"
+  }
+}

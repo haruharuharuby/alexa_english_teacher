@@ -1,0 +1,30 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "English friends",
+          "examplePhrases": [
+            "Alexa call english friends select scene",
+            "Alexa call english friends i wanna be friends with you",
+            "Alexa call english friends i have a stomach ache"
+          ],
+          "name": "english_friends",
+          "description": "English friends skill provides you situation thant you can make mistake easilly in english conversation."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Alexa call english friends",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
