@@ -14,8 +14,7 @@ ask init
 
 # deploy
 ```bash
-cd english_friends
-ask deploy
+sh deploy.sh
 ```
 
 # test
@@ -52,10 +51,5 @@ Alexa: 'OK. I will give some medicine for your fever'
 | hospital_scene_002 | hospital | hospitalIntent002_001, hospitalIntent002_002, hospitalIntent002_003 |
 
 ## Answer from User
-utterance which user says as answer matched expected_intents, Alexa replies 'good' message. 
+utterance which user says as answer matched expected_intents, Alexa replies 'good' message.
 if answer does not matched intent, Alexa replies 'bad' message.
-
-
-
-  
-

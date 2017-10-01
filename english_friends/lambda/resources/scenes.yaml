@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  scenes:
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      AttributeDefinitions:
+        -
+          AttributeName: scene_id
+          AttributeType: S
+      KeySchema:
+        -
+          AttributeName: scene_id
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      TableName: scenes
+      Tags:
+        -
+          Key: Name
+          Value: alexa_english_teacher_skill
+  policy:
+    Type: "AWS::IAM::Policy"
+    Properties:
+      PolicyName: alexa_english_teacher_skill
+      Roles:
+        - ask-lambda-english-friends
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          -
+            Effect: "Allow"
+            Action:
+              - "dynamodb:DeleteItem"
+              - "dynamodb:Query"
+              - "dynamodb:UpdateItem"
+              - "dynamodb:PutItem"
+            Resource: !Sub arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/scenes
